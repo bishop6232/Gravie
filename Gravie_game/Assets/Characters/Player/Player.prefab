@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8706116479423877700}
   - component: {fileID: 5502172297098479971}
   - component: {fileID: 6631047291219832769}
+  - component: {fileID: 9149292609943398104}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -131,6 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e922996589524055a18b78545c6a6fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpImpulse: 10
   walkspeed: 4
 --- !u!114 &8706116479423877700
 MonoBehaviour:
@@ -251,8 +253,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5524642974585845731}
         m_TargetAssemblyTypeName: playerControl, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
+        m_MethodName: OnJump
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -331,3 +333,30 @@ CapsuleCollider2D:
   m_Offset: {x: 0.09177173, y: 2.049963}
   m_Size: {x: 2.528293, y: 4.099926}
   m_Direction: 0
+--- !u!114 &9149292609943398104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5741349962630432577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5c8f707f8b7447c09edbd26010a0cb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  castFilter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+  groundDistance: 0.5
