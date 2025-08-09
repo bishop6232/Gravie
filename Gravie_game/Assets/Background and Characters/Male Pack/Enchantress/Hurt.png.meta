@@ -136,45 +136,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hurt_0
+      name: images-2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 128
-        height: 128
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5a00df8d473d74927881f217dc03ead3
-      internalID: -698460333
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hurt_1
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 128
-        height: 128
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 613d6b00f6f8c45359d75854ee13ce06
-      internalID: 1891960166
+      spriteID: 22f90c1e5a3a74770800000000000000
+      internalID: 8595018346712309538
       vertices: []
       indices: 
       edges: []
@@ -183,7 +161,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 44d4e5f26e7fa4047958d1b8f9aec0a7
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -193,8 +171,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Hurt_0: -698460333
-      Hurt_1: 1891960166
+      images-2_0: 8595018346712309538
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
