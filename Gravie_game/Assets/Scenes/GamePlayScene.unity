@@ -2894,6 +2894,7 @@ GameObject:
   - component: {fileID: 1039070568}
   - component: {fileID: 1039070570}
   - component: {fileID: 1039070569}
+  - component: {fileID: 1039070571}
   m_Layer: 5
   m_Name: JumpButton
   m_TagString: Untagged
@@ -2958,6 +2959,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1039070567}
   m_CullTransparentMesh: 1
+--- !u!114 &1039070571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039070567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d54531977ecb194c95e2d3aa7a5d72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ControlPath: <Gamepad>/buttonSouth
 --- !u!1 &1066517573
 GameObject:
   m_ObjectHideFlags: 0
@@ -3368,6 +3382,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 105545031142901115, guid: e134d35dcc9ff4a44916f538adf31e47, type: 3}
+      propertyPath: isGrounded
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 446553239982698015, guid: e134d35dcc9ff4a44916f538adf31e47, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.33

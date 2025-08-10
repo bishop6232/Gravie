@@ -133,8 +133,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkspeed: 5
-  runspeed: 7
-  jumpImpulse: 8
+  runspeed: 6
+  jumpImpulse: 7
   isFacingRight: 1
 --- !u!114 &9112255268873677605
 MonoBehaviour:
@@ -385,5 +385,5 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  groundDistance: 0.3
+  groundDistance: 0.5
   isGrounded: 0
