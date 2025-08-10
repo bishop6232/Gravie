@@ -19,11 +19,14 @@ public class PlayerController : MonoBehaviour
     private bool isMoving = false;
     private bool isRunning = false;
 
+    private bool isGravityInverted = false;
+
+ 
     public float CurrentMoveSpeed
     {
         get
         {
-            if (isMoving)
+            if (isMoving && !touchingDirections.IsOnWall)
             {
                 if (isRunning)
                 {
@@ -67,7 +70,7 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("isRunning", isRunning);
         }
     }
-    public bool isFacingRight = true; // default to facing right
+    public bool isFacingRight = true; // player faces right by default
 
     public bool IsFacingRight
     {
@@ -113,7 +116,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (moveInput.x < 0 && IsFacingRight)
         {
-            IsFacingRight = false; // Facing left
+            IsFacingRight = false; 
         }
 
     }
@@ -137,11 +140,44 @@ public class PlayerController : MonoBehaviour
         if (context.started && touchingDirections.IsGrounded)
         {
             animator.SetTrigger("jump");
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpImpulse); 
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpImpulse);
         }
         else if (context.canceled)
         {
 
         }
+    }
+
+    public void OnFlipGravity(InputAction.CallbackContext context)
+    {
+        if (context.started && touchingDirections.IsGrounded)
+        {
+            StartCoroutine(JumpThenFlip());
+        }
+    }
+
+    private IEnumerator JumpThenFlip()
+    {
+        // jump direction depends on gravity
+        float jumpDirection = isGravityInverted ? -1f : 1f;
+
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpImpulse * jumpDirection);
+
+        yield return new WaitForSeconds(0.15f);
+
+        FlipGravity();
+    }
+    private void FlipGravity()
+    {
+        // Invert gravity and update the player's scale
+
+        isGravityInverted = !isGravityInverted;
+        rb.gravityScale *= -1;
+
+        Vector2 scale = transform.localScale;
+        scale.y *= -1;
+        transform.localScale = scale;
+
+        touchingDirections.isGravityInverted = isGravityInverted;
     }
 }
