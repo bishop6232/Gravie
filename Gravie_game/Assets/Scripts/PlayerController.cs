@@ -136,17 +136,16 @@ public class PlayerController : MonoBehaviour
 
     // TODO: check if player is still alive before jump
     public void OnJump(InputAction.CallbackContext context)
+{
+    if (context.started && touchingDirections.IsGrounded)
     {
-        if (context.started && touchingDirections.IsGrounded)
-        {
-            animator.SetTrigger("jump");
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpImpulse);
-        }
-        else if (context.canceled)
-        {
+        animator.SetTrigger("jump");
 
-        }
+        float direction = isGravityInverted ? -1f : 1f; // negative when inverted
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpImpulse * direction);
     }
+}
+
 
     public void OnFlipGravity(InputAction.CallbackContext context)
     {
@@ -177,6 +176,7 @@ public class PlayerController : MonoBehaviour
         Vector2 scale = transform.localScale;
         scale.y *= -1;
         transform.localScale = scale;
+        
 
         touchingDirections.isGravityInverted = isGravityInverted;
     }
