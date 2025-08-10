@@ -330,7 +330,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 8
+  orthographic size: 13
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -564,7 +564,7 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 34
-    OrthographicSize: 8
+    OrthographicSize: 13
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -5966,7 +5966,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5718078846760440577, guid: e134d35dcc9ff4a44916f538adf31e47, type: 3}
       propertyPath: jumpImpulse
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5718078846760440577, guid: e134d35dcc9ff4a44916f538adf31e47, type: 3}
       propertyPath: isFacingRight
