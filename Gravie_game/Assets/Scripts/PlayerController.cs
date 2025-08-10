@@ -3,16 +3,18 @@ using UnityEngine.InputSystem;
 using System.Collections;
 using System.Collections.Generic;
 
-[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Rigidbody2D), typeof(TouchingDirections))]
 public class PlayerController : MonoBehaviour
 {
 
     Vector2 moveInput;
     Rigidbody2D rb;
+    TouchingDirections touchingDirections;
 
     Animator animator;
     public float walkspeed = 3f;
     public float runspeed = 7f;
+    public float jumpImpulse = 10f;
 
     private bool isMoving = false;
     private bool isRunning = false;
@@ -66,7 +68,7 @@ public class PlayerController : MonoBehaviour
         }
     }
     public bool isFacingRight = true; // default to facing right
-  
+
     public bool IsFacingRight
     {
         get
@@ -88,11 +90,13 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        touchingDirections = GetComponent<TouchingDirections>();
     }
 
     private void FixedUpdate()
     {
         rb.linearVelocity = new Vector2(moveInput.x * CurrentMoveSpeed, rb.linearVelocity.y);
+        animator.SetFloat("yVelocity", rb.linearVelocity.y);
     }
     public void OnMove(InputAction.CallbackContext context)
     {
@@ -105,13 +109,13 @@ public class PlayerController : MonoBehaviour
     {
         if (moveInput.x > 0 && !IsFacingRight)
         {
-            IsFacingRight = true; // Facing right
+            IsFacingRight = true;
         }
         else if (moveInput.x < 0 && IsFacingRight)
         {
             IsFacingRight = false; // Facing left
         }
-      
+
     }
 
     public void OnRun(InputAction.CallbackContext context)
@@ -123,6 +127,20 @@ public class PlayerController : MonoBehaviour
         else if (context.canceled)
         {
             IsRunning = false;
+
+        }
+    }
+
+    // TODO: check if player is still alive before jump
+    public void OnJump(InputAction.CallbackContext context)
+    {
+        if (context.started && touchingDirections.IsGrounded)
+        {
+            animator.SetTrigger("jump");
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpImpulse); 
+        }
+        else if (context.canceled)
+        {
 
         }
     }
