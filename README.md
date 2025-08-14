@@ -49,7 +49,8 @@ All controls are handled via **on-screen buttons**:
 ## 🔋 Health System
 
 - Start with **100 health points**
-- Obstacle hit: **-20 health**
+- Spike Obstacle hit: **-10 health**
+- Blade Obstacle hit: **-30 health**
 - Shop Items:
   - Small Potion: **+20 HP**
   - Large Potion: **+50 HP**
