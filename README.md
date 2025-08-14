@@ -27,8 +27,8 @@ All controls are handled via **on-screen buttons**:
 
 | Action         | Control Type        |
 |----------------|---------------------|
-| Move Left      | On-screen left arrow |
-| Move Right     | On-screen right arrow |
+| Move Left     | On-screen joystick |
+| Move Right     | On-screen joystick |
 | Jump           | On-screen jump button |
 | Flip Gravity   | On-screen gravity button |
 
