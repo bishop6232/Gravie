@@ -16,5 +16,9 @@ public class DamageOnTouch : MonoBehaviour
         playerHealth.TakeDamage(damageAmount);
 
         Debug.Log($"Player collided with {gameObject.name} and took {damageAmount} damage.");
+        if (playerHealth.CurrentHealth <= 0)
+        {
+            Debug.Log("Player has died.");
+        }
     }
 }

@@ -7,10 +7,11 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private int maxHealth = 10;
     [SerializeField] private int currentHealth;
 
-   
-    // Invoked with (currentHealth, maxHealth)
-    public UnityEvent<int, int> OnHealthChanged = new UnityEvent<int, int>();
 
+    // Invoked with (currentHealth, maxHealth)
+    public UnityEvent<int, int> OnHealthChanged;
+    public GameManagerScript gameManager;
+    private bool isDead;
     // Read-only properties (for safe access from other scripts)
     public int MaxHealth => maxHealth;
     public int CurrentHealth => currentHealth;
@@ -32,16 +33,14 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
-        if (currentHealth <= 0)
-        {
-           return; 
-        } 
-
+    
         currentHealth = Mathf.Max(0, currentHealth - amount);
         OnHealthChanged.Invoke(currentHealth, maxHealth);
 
-        if (currentHealth == 0)
+        if (currentHealth <= 0 && !isDead)
         {
+            isDead = true; // Prevent multiple calls to Die
+            gameManager.GameOver(); // Call GameOver method from GameManagerScript
             Die();
         }
             
@@ -65,10 +64,13 @@ public class PlayerHealth : MonoBehaviour
     private void Die()
     {
         animator.SetBool("isAlive", false);
+        FindFirstObjectByType<GameManagerScript>().GameOver(); // Call GameOver method from GameManagerScript
         if (playerController != null)
         {
-            playerController.enabled = false; // Disable player controls
+            playerController.enabled = false;// Disable player controls
+            playerController.jumpImpulse = 0; // Reset jump impulse
         } 
         
     }
 }
+
