@@ -40,8 +40,8 @@ public class PlayerHealth : MonoBehaviour
         if (currentHealth <= 0 && !isDead)
         {
             isDead = true; // Prevent multiple calls to Die
-            gameManager.GameOver(); // Call GameOver method from GameManagerScript
             Die();
+            gameManager.GameOver(); // Call GameOver method from GameManagerScript
         }
             
     }
@@ -63,14 +63,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void Die()
     {
-        animator.SetBool("isAlive", false);
-        FindFirstObjectByType<GameManagerScript>().GameOver(); // Call GameOver method from GameManagerScript
-        if (playerController != null)
-        {
-            playerController.enabled = false;// Disable player controls
-            playerController.jumpImpulse = 0; // Reset jump impulse
-        } 
-        
+        animator.SetBool("isAlive", false);   
     }
 }
 

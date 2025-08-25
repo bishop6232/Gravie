@@ -3,26 +3,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.InputSystem;
 
 public class GameManagerScript : MonoBehaviour
 {
+    public InputActionAsset inputActions; 
     [SerializeField] private TMP_Text winOrLoseText;
     public GameObject gameOverUI;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
 
-  public void EndGame(bool won)
+    public GameObject ScoreBoardUI;
+    public void EndGame(bool won)
     {
         if (winOrLoseText != null)
         {
-            winOrLoseText.text = won ? "You Win!" : "You Lose!"; 
+            winOrLoseText.text = won ? "You Win!" : "You Lose!";
         }
 
 
         if (gameOverUI != null)
         {
             gameOverUI.SetActive(true);
+            InputSystem.DisableDevice(Keyboard.current);
+            InputSystem.DisableDevice(Gamepad.current);  
         }
+        
             
+       
     }
     public void GameOver()
     {
@@ -50,6 +56,31 @@ public class GameManagerScript : MonoBehaviour
     {
         // Load the main menu scene
         SceneManager.LoadScene("Main Menu");
+    }
+
+    public void LoadScoreboard()
+    {
+        if (ScoreBoardUI != null)
+        {
+            ScoreBoardUI.SetActive(true);
+
+            if (gameOverUI != null)
+            {
+                gameOverUI.SetActive(false);
+            }
+        }
+    }
+    public void BackToGameOver()
+    {
+        if (ScoreBoardUI != null)
+        {
+            ScoreBoardUI.SetActive(false);
+
+            if (gameOverUI != null)
+            {
+                gameOverUI.SetActive(true);
+            }
+        }
     }
     
 }
