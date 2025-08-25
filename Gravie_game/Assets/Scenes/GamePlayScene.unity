@@ -21979,7 +21979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 406abfc93cc76d94591c3bb402aeb137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 6
   startingPoint: 0
   points:
   - {fileID: 799675913}
