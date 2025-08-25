@@ -30,4 +30,22 @@ public class movingFloor : MonoBehaviour
         //moving the platform to the point position with the index "i"
         transform.position = Vector2.MoveTowards(transform.position, points[i].position, speed * Time.deltaTime);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player")) //check if the object that collided with the platform is the player
+        {
+            collision.gameObject.transform.SetParent(transform); //set the player as a child of the platform
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player")) //check if the object that collided with the platform is the player
+        {
+            collision.gameObject.transform.SetParent(null); //remove the player as a child of the platform
+        }
+    }
 }
+
+
