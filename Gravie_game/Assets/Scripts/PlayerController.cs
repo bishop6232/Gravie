@@ -6,7 +6,7 @@ using System.Collections.Generic;
 [RequireComponent(typeof(Rigidbody2D), typeof(TouchingDirections))]
 public class PlayerController : MonoBehaviour
 {
-
+    public CollectableManager collectableManager;
     Vector2 moveInput;
     Rigidbody2D rb;
     TouchingDirections touchingDirections;
@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
 
     private bool isGravityInverted = false;
 
- 
+
     public float CurrentMoveSpeed
     {
         get
@@ -116,7 +116,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (moveInput.x < 0 && IsFacingRight)
         {
-            IsFacingRight = false; 
+            IsFacingRight = false;
         }
 
     }
@@ -136,15 +136,15 @@ public class PlayerController : MonoBehaviour
 
     // TODO: check if player is still alive before jump
     public void OnJump(InputAction.CallbackContext context)
-{
-    if (context.started && touchingDirections.IsGrounded)
     {
-        animator.SetTrigger("jump");
+        if (context.started && touchingDirections.IsGrounded)
+        {
+            animator.SetTrigger("jump");
 
-        float direction = isGravityInverted ? -1f : 1f; // negative when inverted
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpImpulse * direction);
+            float direction = isGravityInverted ? -1f : 1f; // negative when inverted
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpImpulse * direction);
+        }
     }
-}
 
 
     public void OnFlipGravity(InputAction.CallbackContext context)
@@ -176,8 +176,18 @@ public class PlayerController : MonoBehaviour
         Vector2 scale = transform.localScale;
         scale.y *= -1;
         transform.localScale = scale;
-        
+
 
         touchingDirections.isGravityInverted = isGravityInverted;
+    }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("coin"))
+        {
+            Destroy(other.gameObject);
+            collectableManager.coinsCollected++;
+
+            Debug.Log("Coin picked up!");
+        }
     }
 }

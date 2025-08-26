@@ -7,7 +7,6 @@ using UnityEngine.InputSystem;
 
 public class GameManagerScript : MonoBehaviour
 {
-    public InputActionAsset inputActions; 
     [SerializeField] private TMP_Text winOrLoseText;
     public GameObject gameOverUI;
 
@@ -16,7 +15,7 @@ public class GameManagerScript : MonoBehaviour
     {
         if (winOrLoseText != null)
         {
-            winOrLoseText.text = won ? "You Win!" : "You Lose!";
+            winOrLoseText.text = won ? "Victory!" : "GAME OVER!";
         }
 
 
@@ -43,6 +42,8 @@ public class GameManagerScript : MonoBehaviour
     {
         // Reload the current scene to restart the game
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        InputSystem.EnableDevice(Keyboard.current);
+        InputSystem.EnableDevice(Gamepad.current);
     }
 
     public void QuitGame()
@@ -50,12 +51,15 @@ public class GameManagerScript : MonoBehaviour
         // Quit the application
         Application.Quit();
         Debug.Log("Game is quitting");
+        
     }
 
     public void LoadMainMenu()
     {
         // Load the main menu scene
         SceneManager.LoadScene("Main Menu");
+        InputSystem.EnableDevice(Keyboard.current);
+        InputSystem.EnableDevice(Gamepad.current);
     }
 
     public void LoadScoreboard()
@@ -68,7 +72,9 @@ public class GameManagerScript : MonoBehaviour
             {
                 gameOverUI.SetActive(false);
             }
+            
         }
+        
     }
     public void BackToGameOver()
     {
@@ -81,6 +87,7 @@ public class GameManagerScript : MonoBehaviour
                 gameOverUI.SetActive(true);
             }
         }
+        
     }
     
 }
