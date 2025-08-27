@@ -1,8 +1,13 @@
 using UnityEngine;
 public class DamageOnTouch : MonoBehaviour
 {
+    AudioManager audioManager;
     [SerializeField] private int damageAmount = 5;
 
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // Check if the collided object is the player
@@ -18,9 +23,10 @@ public class DamageOnTouch : MonoBehaviour
             return;
         }
         // Apply damage to the player
-        else 
+        else
+            audioManager.PlaySound(audioManager.impactSFX);
             playerHealth.TakeDamage(damageAmount);
-        
+
 
         Debug.Log($"Player collided with {gameObject.name} and took {damageAmount} damage.");
         if (playerHealth.CurrentHealth <= 0)
@@ -36,6 +42,7 @@ public class DamageOnTouch : MonoBehaviour
             PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
+                audioManager.PlaySound(audioManager.coinSFX);
                 playerHealth.TakeDamage(damageAmount);
             }
         }

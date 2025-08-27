@@ -7,6 +7,7 @@ public class AudioManager : MonoBehaviour
 
     public AudioClip background;
     public AudioClip coinSFX;
+    public AudioClip impactSFX;
 
 
     private void Start()
@@ -19,7 +20,7 @@ public class AudioManager : MonoBehaviour
     {
         backgroundMusicSource.Pause();
     }
-    public void PlayCoinSound(AudioClip clip)
+    public void PlaySound(AudioClip clip)
     {
         sfxSource.PlayOneShot(clip);
     }

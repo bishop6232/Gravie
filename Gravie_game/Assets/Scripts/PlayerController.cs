@@ -186,7 +186,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.CompareTag("coin"))
         {
-            audioManager.PlayCoinSound(audioManager.coinSFX);
+            audioManager.PlaySound(audioManager.coinSFX);
             Destroy(other.gameObject);
             collectableManager.coinsCollected++;
 
