@@ -11,19 +11,20 @@ public class CollectableManager : MonoBehaviour
     void Start()
     {
         coinsCollected = 0;
+
         if (coinText != null)
         {
-            coinText.text = ": " + coinsCollected.ToString();
+            coinText.text = " " + coinsCollected.ToString();
         }
         if (totalCoinText != null)
         {
-            totalCoinText.text = "Total Coins: " + coinText;
+            totalCoinText.text = "Total Coins: " + coinsCollected.ToString();
         }
     }
     // Update is called once per frame
     void Update()
     {
-        coinText.text = ": " + coinsCollected.ToString();
+        coinText.text = " " + coinsCollected.ToString();
         if (totalCoinText != null)
         {
             totalCoinText.text = "Total Coins: " + coinsCollected.ToString();
