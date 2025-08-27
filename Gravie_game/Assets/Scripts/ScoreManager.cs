@@ -7,36 +7,42 @@ public class ScoreManager : MonoBehaviour
     public TMP_Text currentScoreText;
     public TMP_Text highestScoreText;
 
-    int highScore = 0;
+    private int highScore = 0;
 
     void Start()
     {
-        // Load saved high score (default 0 if none exists)
+        // Load saved high score 
         highScore = PlayerPrefs.GetInt("HighScore", 0);
 
-        // Update the UI right away
         if (highestScoreText != null)
             highestScoreText.text = "Highest Score: " + highScore;
     }
 
     public void UpdateScore()
     {
-        // Show current score
+        int currentScore = collectableManager.coinsCollected;
+
         if (currentScoreText != null)
-            currentScoreText.text = "Current Score: " + collectableManager.coinsCollected;
+            currentScoreText.text = "Current Score: " + currentScore;
 
-        // Only update if the player beat the high score
-        if (collectableManager.coinsCollected > highScore)
+        // to check and update high score if current score exceeds it
+        int savedHighScore = PlayerPrefs.GetInt("HighScore", 0);
+
+        if (currentScore > savedHighScore)
         {
-            highScore = collectableManager.coinsCollected;
-
-            // Save new high score permanently
-            PlayerPrefs.SetInt("HighScore", highScore);
+            // to save new high score
+            PlayerPrefs.SetInt("HighScore", currentScore);
             PlayerPrefs.Save();
+            highScore = currentScore;
+        }
+        else
+        {
+            highScore = savedHighScore;
+        }
 
-            // Update UI
-            if (highestScoreText != null)
-                highestScoreText.text = "Highest Score: " + highScore;
+        if (highestScoreText != null)
+        {
+            highestScoreText.text = "Highest Score: " + highScore;
         }
     }
 }

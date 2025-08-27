@@ -6,6 +6,7 @@ using System.Collections.Generic;
 [RequireComponent(typeof(Rigidbody2D), typeof(TouchingDirections))]
 public class PlayerController : MonoBehaviour
 {
+    AudioManager audioManager;
     public CollectableManager collectableManager;
     Vector2 moveInput;
     Rigidbody2D rb;
@@ -94,6 +95,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         touchingDirections = GetComponent<TouchingDirections>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     private void FixedUpdate()
@@ -184,6 +186,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.CompareTag("coin"))
         {
+            audioManager.PlayCoinSound(audioManager.coinSFX);
             Destroy(other.gameObject);
             collectableManager.coinsCollected++;
 

@@ -11,6 +11,13 @@ public class GameManagerScript : MonoBehaviour
     public GameObject gameOverUI;
 
     public GameObject ScoreBoardUI;
+    
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
     public void EndGame(bool won)
     {
         if (winOrLoseText != null)
@@ -23,11 +30,12 @@ public class GameManagerScript : MonoBehaviour
         {
             gameOverUI.SetActive(true);
             InputSystem.DisableDevice(Keyboard.current);
-            InputSystem.DisableDevice(Gamepad.current);  
+            InputSystem.DisableDevice(Gamepad.current);
         }
-        
-            
-       
+        if (audioManager != null)
+        {
+            audioManager.PauseBackgroundMusic();
+        }
     }
     public void GameOver()
     {
