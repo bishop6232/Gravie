@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class mainMenu : MonoBehaviour
 {
+    public GameObject SettingsUI;
     public void playGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -14,6 +15,20 @@ public class mainMenu : MonoBehaviour
         Application.Quit();
         System.Diagnostics.Process.GetCurrentProcess().Kill();
         Debug.Log("QUIT");
+    }
+    public void Options()
+    {
+        if (SettingsUI != null)
+        {
+            SettingsUI.SetActive(true);
+        }
+    }
+    public void CloseOptions()
+    {
+        if (SettingsUI != null)
+        {
+            SettingsUI.SetActive(false);
+        }
     }
  
 }

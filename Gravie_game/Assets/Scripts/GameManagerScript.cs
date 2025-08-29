@@ -11,7 +11,9 @@ public class GameManagerScript : MonoBehaviour
     public GameObject gameOverUI;
 
     public GameObject ScoreBoardUI;
-    
+
+    public GameObject pauseMenuUI;
+
     AudioManager audioManager;
 
     private void Awake()
@@ -36,6 +38,7 @@ public class GameManagerScript : MonoBehaviour
         {
             audioManager.PauseBackgroundMusic();
         }
+
     }
     public void GameOver()
     {
@@ -52,6 +55,8 @@ public class GameManagerScript : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         InputSystem.EnableDevice(Keyboard.current);
         InputSystem.EnableDevice(Gamepad.current);
+        audioManager.ResumeBackgroundMusic();
+        Time.timeScale = 1f; // Ensure the game is not paused
     }
 
     public void QuitGame()
@@ -59,7 +64,7 @@ public class GameManagerScript : MonoBehaviour
         // Quit the application
         Application.Quit();
         Debug.Log("Game is quitting");
-        
+
     }
 
     public void LoadMainMenu()
@@ -68,6 +73,10 @@ public class GameManagerScript : MonoBehaviour
         SceneManager.LoadScene("Main Menu");
         InputSystem.EnableDevice(Keyboard.current);
         InputSystem.EnableDevice(Gamepad.current);
+        audioManager.ResumeBackgroundMusic();
+        Time.timeScale = 1f; // Ensure the game is not paused
+
+
     }
 
     public void LoadScoreboard()
@@ -80,9 +89,9 @@ public class GameManagerScript : MonoBehaviour
             {
                 gameOverUI.SetActive(false);
             }
-            
+
         }
-        
+
     }
     public void BackToGameOver()
     {
@@ -95,7 +104,35 @@ public class GameManagerScript : MonoBehaviour
                 gameOverUI.SetActive(true);
             }
         }
-        
+
+    }
+    public void LoadPauseMenu()
+    {
+        if (pauseMenuUI != null)
+        {
+            pauseMenuUI.SetActive(true);
+            Time.timeScale = 0f; // Pause the game
+            InputSystem.DisableDevice(Keyboard.current);
+            InputSystem.DisableDevice(Gamepad.current);
+            if (audioManager != null)
+            {
+                audioManager.PauseBackgroundMusic();
+            }
+        }
+    }
+    public void ResumeGame()
+    {
+        if (pauseMenuUI != null)
+        {
+            pauseMenuUI.SetActive(false);
+            Time.timeScale = 1f; // Resume the game
+            InputSystem.EnableDevice(Keyboard.current);
+            InputSystem.EnableDevice(Gamepad.current);
+            if (audioManager != null)
+            {
+                audioManager.ResumeBackgroundMusic();
+            }
+        }
     }
     
 }
