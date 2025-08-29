@@ -69,11 +69,14 @@ public class GameManagerScript : MonoBehaviour
 
     public void LoadMainMenu()
     {
+        audioManager.StopBackgroundMusic();
         // Load the main menu scene
         SceneManager.LoadScene("Main Menu");
         InputSystem.EnableDevice(Keyboard.current);
         InputSystem.EnableDevice(Gamepad.current);
-        audioManager.MainMenuMusicReset();
+        Debug.Log("Loading Main Menu");
+        audioManager.ResumeBackgroundMusic();
+
         Time.timeScale = 1f; // Ensure the game is not paused
 
 

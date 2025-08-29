@@ -5,7 +5,14 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class mainMenu : MonoBehaviour
 {
+    AudioManager audioManager;
     public GameObject SettingsUI;
+
+    public void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    
+    }
     public void playGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
