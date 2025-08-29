@@ -34,8 +34,12 @@ public class GameManagerScript : MonoBehaviour
             InputSystem.DisableDevice(Keyboard.current);
             InputSystem.DisableDevice(Gamepad.current);
         }
+        else InputSystem.EnableDevice(Keyboard.current);
+            InputSystem.EnableDevice(Gamepad.current);
+            
         if (audioManager != null)
         {
+            audioManager.StopSound();
             audioManager.PauseBackgroundMusic();
         }
 
@@ -52,6 +56,7 @@ public class GameManagerScript : MonoBehaviour
     public void RestartGame()
     {   
         audioManager.StopBackgroundMusic();
+       
         // Reload the current scene to restart the game
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         InputSystem.EnableDevice(Keyboard.current);

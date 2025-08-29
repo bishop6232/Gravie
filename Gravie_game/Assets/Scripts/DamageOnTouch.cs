@@ -1,11 +1,13 @@
 using UnityEngine;
 public class DamageOnTouch : MonoBehaviour
 {
+    Collider2D fireCollider;
     AudioManager audioManager;
     [SerializeField] private int damageAmount = 5;
 
     private void Awake()
     {
+        fireCollider = GetComponent<Collider2D>();
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -25,7 +27,7 @@ public class DamageOnTouch : MonoBehaviour
         // Apply damage to the player
         else
             audioManager.PlaySound(audioManager.impactSFX);
-            playerHealth.TakeDamage(damageAmount);
+        playerHealth.TakeDamage(damageAmount);
 
 
         Debug.Log($"Player collided with {gameObject.name} and took {damageAmount} damage.");
@@ -37,14 +39,27 @@ public class DamageOnTouch : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         // same as the above but for trigger enabled object
+        if (!fireCollider.enabled) { return; }
         if (other.CompareTag("Player"))
         {
             PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
-                audioManager.PlaySound(audioManager.coinSFX);
+                audioManager.PlaySound(audioManager.impactSFX);
                 playerHealth.TakeDamage(damageAmount);
             }
+
         }
     }
+   public void EnableDamage()
+{
+    fireCollider.enabled = true;
+    Debug.Log("🔥 FireTrap ENABLED collider");
+}
+
+public void DisableDamage()
+{
+    fireCollider.enabled = false;
+    Debug.Log("❄️ FireTrap DISABLED collider");
+}
 }

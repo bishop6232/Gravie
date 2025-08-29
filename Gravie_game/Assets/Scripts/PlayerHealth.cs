@@ -62,7 +62,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void Die()
     {
-        animator.SetBool("isAlive", false);   
+        animator.SetBool("isAlive", false); 
     }
 }
 

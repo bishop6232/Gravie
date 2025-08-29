@@ -40,6 +40,10 @@ public class AudioManager : MonoBehaviour
     {
         backgroundMusicSource.Stop();
     }
+    public void StopSound()
+    {
+        Time.timeScale = 0f;
+    }
   
   
 
