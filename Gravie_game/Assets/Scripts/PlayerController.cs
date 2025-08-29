@@ -190,7 +190,15 @@ public class PlayerController : MonoBehaviour
             Destroy(other.gameObject);
             collectableManager.coinsCollected++;
 
-            Debug.Log("Coin picked up!");
+            Debug.Log("Coin picked up!"); 
+        }
+        if (other.CompareTag("diamond"))
+        {
+            audioManager.PlaySound(audioManager.coinSFX);
+            Destroy(other.gameObject);
+            collectableManager.diamondsCollected++;
+
+            Debug.Log("Diamond picked up!");
         }
     }
 }

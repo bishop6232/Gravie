@@ -7,6 +7,7 @@ TagManager:
   - obstacle
   - coin
   - Audio
+  - diamond
   layers:
   - Default
   - TransparentFX
