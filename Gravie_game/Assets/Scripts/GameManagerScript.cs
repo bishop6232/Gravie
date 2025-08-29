@@ -73,7 +73,7 @@ public class GameManagerScript : MonoBehaviour
         SceneManager.LoadScene("Main Menu");
         InputSystem.EnableDevice(Keyboard.current);
         InputSystem.EnableDevice(Gamepad.current);
-        audioManager.ResumeBackgroundMusic();
+        audioManager.MainMenuMusicReset();
         Time.timeScale = 1f; // Ensure the game is not paused
 
 

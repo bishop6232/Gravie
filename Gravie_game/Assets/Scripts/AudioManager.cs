@@ -7,6 +7,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioSource sfxSource;
 
     public AudioClip background;
+    public AudioClip ChangeBGMusic;
     public AudioClip coinSFX;
     public AudioClip impactSFX;
 
@@ -25,7 +26,7 @@ public class AudioManager : MonoBehaviour
     }
     public void PauseBackgroundMusic()
     {
-        backgroundMusicSource.Stop();
+        backgroundMusicSource.Pause();
     }
     public void PlaySound(AudioClip clip)
     {
@@ -34,6 +35,13 @@ public class AudioManager : MonoBehaviour
     public void ResumeBackgroundMusic()
     {
         backgroundMusicSource.Play();
-        
+
+    }
+    public void MainMenuMusicReset()
+    {
+        backgroundMusicSource.Stop();
+        backgroundMusicSource.clip = ChangeBGMusic;
+        backgroundMusicSource.Play();
+        backgroundMusicSource.loop = true;
     }
 }

@@ -308,10 +308,9 @@ MonoBehaviour:
   backgroundMusicSource: {fileID: 4573945007695059407}
   sfxSource: {fileID: 487102918972320997}
   background: {fileID: 8300000, guid: 42166cd8088ad47d1bd234ad95a7e8aa, type: 3}
+  ChangeBGMusic: {fileID: 8300000, guid: 8ddd0b18ca38642d39dbbbfa600cf394, type: 3}
   coinSFX: {fileID: 8300000, guid: ad5ff945dc48d40969fe3dafcadc8a75, type: 3}
   impactSFX: {fileID: 8300000, guid: f81db7de9d7bf433e8678c4644957d0c, type: 3}
-  mixer: {fileID: 24100000, guid: 0fbe7d159a5a44414ab5c6f2c498d946, type: 2}
-  masterParam: MasterVolume
 --- !u!1 &8446625252582912282
 GameObject:
   m_ObjectHideFlags: 0
