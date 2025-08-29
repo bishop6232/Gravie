@@ -50,7 +50,8 @@ public class GameManagerScript : MonoBehaviour
     }
 
     public void RestartGame()
-    {
+    {   
+        audioManager.StopBackgroundMusic();
         // Reload the current scene to restart the game
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         InputSystem.EnableDevice(Keyboard.current);
