@@ -24744,7 +24744,7 @@ MonoBehaviour:
   ScoreBoardUI: {fileID: 1763881925}
   pauseMenuUI: {fileID: 132683322}
   selectedPlayer: {fileID: 7856464677679160772, guid: a48a5260ced08b14fbd1b96eaee40b35, type: 3}
-  CurrentPlayer: {fileID: 8984943955575217305, guid: f7f2414f92f0b814f8a1448aea8bf340, type: 3}
+  Player: {fileID: 3987410964963518438}
 --- !u!4 &1253357875
 Transform:
   m_ObjectHideFlags: 0
@@ -34895,6 +34895,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7f2414f92f0b814f8a1448aea8bf340, type: 3}
+--- !u!1 &3987410964963518438 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8984943955575217305, guid: f7f2414f92f0b814f8a1448aea8bf340, type: 3}
+  m_PrefabInstance: {fileID: 3987410964963518437}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6284340027348432213
 PrefabInstance:
   m_ObjectHideFlags: 0

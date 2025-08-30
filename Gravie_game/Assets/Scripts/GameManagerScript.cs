@@ -16,7 +16,7 @@ public class GameManagerScript : MonoBehaviour
 
     public GameObject selectedPlayer;
 
-    public GameObject CurrentPlayer;
+    public GameObject Player;
 
     private Sprite playerSprite;
 
@@ -28,7 +28,7 @@ public class GameManagerScript : MonoBehaviour
         {
             playerSprite = selectedPlayer.GetComponent<SpriteRenderer>().sprite;
 
-            CurrentPlayer.GetComponent<SpriteRenderer>().sprite = playerSprite;
+           Player.GetComponent<SpriteRenderer>().sprite = playerSprite;
         }
     }
 
