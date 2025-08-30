@@ -14,7 +14,23 @@ public class GameManagerScript : MonoBehaviour
 
     public GameObject pauseMenuUI;
 
+    public GameObject selectedPlayer;
+
+    public GameObject CurrentPlayer;
+
+    private Sprite playerSprite;
+
     AudioManager audioManager;
+
+    void Start()
+    {
+        if (selectedPlayer != null)
+        {
+            playerSprite = selectedPlayer.GetComponent<SpriteRenderer>().sprite;
+
+            CurrentPlayer.GetComponent<SpriteRenderer>().sprite = playerSprite;
+        }
+    }
 
     private void Awake()
     {

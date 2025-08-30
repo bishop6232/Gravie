@@ -37,5 +37,10 @@ public class mainMenu : MonoBehaviour
             SettingsUI.SetActive(false);
         }
     }
- 
+
+    public void LoadCharacterScene()
+    {
+        SceneManager.LoadScene("CharacterSelection");
+    }
+
 }
