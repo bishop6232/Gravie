@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(TouchingDirections))]
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, IShopCustomer
 {
     AudioManager audioManager;
     public CollectableManager collectableManager;
@@ -200,5 +200,10 @@ public class PlayerController : MonoBehaviour
 
             Debug.Log("Diamond picked up!");
         }
+    }
+
+    public void BoughtItem(Item.ItemType itemType)
+    {
+        Debug.Log("Player bought item: " + itemType);
     }
 }
