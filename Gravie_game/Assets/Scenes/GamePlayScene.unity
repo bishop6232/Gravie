@@ -172,6 +172,10 @@ PrefabInstance:
       value: images-2_0 1 (7)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -191,7 +195,6 @@ GameObject:
   - component: {fileID: 2310310}
   - component: {fileID: 2310311}
   - component: {fileID: 2310312}
-  - component: {fileID: 2310314}
   - component: {fileID: 2310315}
   m_Layer: 0
   m_Name: Spike (10)
@@ -316,28 +319,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 8.780148, y: 4}
   m_EdgeRadius: 0
---- !u!95 &2310314
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2310309}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &2310315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -466,6 +447,10 @@ PrefabInstance:
       value: images-2_0 1 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -530,6 +515,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -601,6 +590,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -689,7 +682,6 @@ GameObject:
   - component: {fileID: 41612769}
   - component: {fileID: 41612773}
   - component: {fileID: 41612772}
-  - component: {fileID: 41612771}
   - component: {fileID: 41612770}
   m_Layer: 0
   m_Name: Spike (22)
@@ -726,28 +718,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 10
---- !u!95 &41612771
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 41612768}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!61 &41612772
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -902,6 +872,10 @@ PrefabInstance:
       value: images-2_0 1 (43)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -961,6 +935,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -1191,6 +1169,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (93)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -1472,6 +1454,10 @@ PrefabInstance:
       value: images-2_0 1 (116)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -1531,6 +1517,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -1638,6 +1628,10 @@ PrefabInstance:
       value: images-2_0 1 (131)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -1697,6 +1691,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -1763,6 +1761,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -1836,6 +1838,10 @@ PrefabInstance:
       value: images-2_0 1 (16)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -1895,6 +1901,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -2035,6 +2045,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -2359,6 +2373,10 @@ PrefabInstance:
       value: images-2_0 1 (98)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -2383,6 +2401,10 @@ PrefabInstance:
     - target: {fileID: 6320003832771408029, guid: 676d9df3e483e9c4c9bc5318552b6803, type: 3}
       propertyPath: m_Name
       value: images-2_0 2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6320003832771408029, guid: 676d9df3e483e9c4c9bc5318552b6803, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6556110225581547516, guid: 676d9df3e483e9c4c9bc5318552b6803, type: 3}
       propertyPath: m_LocalScale.x
@@ -2488,6 +2510,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -2660,6 +2686,10 @@ PrefabInstance:
       value: images-2_0 1 (19)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -2719,6 +2749,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (110)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -3024,6 +3058,10 @@ PrefabInstance:
       value: images-2_0 1 (101)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -3088,6 +3126,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5718078846760440577, guid: e134d35dcc9ff4a44916f538adf31e47, type: 3}
+      propertyPath: shopUI
+      value: 
+      objectReference: {fileID: 410898937}
+    - target: {fileID: 5718078846760440577, guid: e134d35dcc9ff4a44916f538adf31e47, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1253357874}
     - target: {fileID: 5718078846760440577, guid: e134d35dcc9ff4a44916f538adf31e47, type: 3}
       propertyPath: collectableManager
       value: 
@@ -3260,7 +3306,6 @@ GameObject:
   - component: {fileID: 255899169}
   - component: {fileID: 255899170}
   - component: {fileID: 255899171}
-  - component: {fileID: 255899173}
   - component: {fileID: 255899174}
   m_Layer: 0
   m_Name: Spike (15)
@@ -3385,28 +3430,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 8, y: 4}
   m_EdgeRadius: 0
---- !u!95 &255899173
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 255899168}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &255899174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3476,6 +3499,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -3554,6 +3581,10 @@ PrefabInstance:
       value: images-2_0 1 (69)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -3615,6 +3646,10 @@ PrefabInstance:
       value: images-2_0 1 (14)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -3633,7 +3668,6 @@ GameObject:
   m_Component:
   - component: {fileID: 335336983}
   - component: {fileID: 335336985}
-  - component: {fileID: 335336984}
   m_Layer: 5
   m_Name: shopItemTemplate
   m_TagString: Untagged
@@ -3665,18 +3699,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &335336984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 335336982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f379d8e57f3896b4890413fd7120117b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &335336985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3732,7 +3754,6 @@ GameObject:
   - component: {fileID: 338286497}
   - component: {fileID: 338286498}
   - component: {fileID: 338286499}
-  - component: {fileID: 338286501}
   - component: {fileID: 338286502}
   m_Layer: 0
   m_Name: Spike (4)
@@ -3857,28 +3878,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 8.490152, y: 4}
   m_EdgeRadius: 0
---- !u!95 &338286501
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 338286496}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &338286502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3981,6 +3980,10 @@ PrefabInstance:
       value: images-2_0 1 (88)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -4040,6 +4043,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -4241,6 +4248,10 @@ PrefabInstance:
       value: images-2_0 1 (61)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -4288,7 +4299,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -566, y: 156}
+  m_AnchoredPosition: {x: -448, y: 296}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &410898937
@@ -4314,7 +4325,6 @@ GameObject:
   - component: {fileID: 414242490}
   - component: {fileID: 414242491}
   - component: {fileID: 414242492}
-  - component: {fileID: 414242494}
   - component: {fileID: 414242495}
   m_Layer: 0
   m_Name: Spike(1)
@@ -4439,28 +4449,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 8.850078, y: 4}
   m_EdgeRadius: 0
---- !u!95 &414242494
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 414242489}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &414242495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4532,6 +4520,10 @@ PrefabInstance:
       value: images-2_0 1 (45)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -4593,6 +4585,10 @@ PrefabInstance:
       value: images-2_0 1 (32)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -4612,7 +4608,6 @@ GameObject:
   - component: {fileID: 434028377}
   - component: {fileID: 434028378}
   - component: {fileID: 434028379}
-  - component: {fileID: 434028381}
   - component: {fileID: 434028382}
   m_Layer: 0
   m_Name: Spike (8)
@@ -4737,28 +4732,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 9.426544, y: 4}
   m_EdgeRadius: 0
---- !u!95 &434028381
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 434028376}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &434028382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4823,6 +4796,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -5019,6 +4996,10 @@ PrefabInstance:
       value: images-2_0 1 (112)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -5121,6 +5102,10 @@ PrefabInstance:
       value: images-2_0 1 (119)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -5185,6 +5170,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -5329,6 +5318,10 @@ PrefabInstance:
       value: images-2_0 1 (80)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -5353,6 +5346,10 @@ PrefabInstance:
     - target: {fileID: 6320003832771408029, guid: 676d9df3e483e9c4c9bc5318552b6803, type: 3}
       propertyPath: m_Name
       value: images-2_0 2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6320003832771408029, guid: 676d9df3e483e9c4c9bc5318552b6803, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6556110225581547516, guid: 676d9df3e483e9c4c9bc5318552b6803, type: 3}
       propertyPath: m_LocalScale.x
@@ -5684,6 +5681,10 @@ PrefabInstance:
       value: images-2_0 1 (26)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -5922,6 +5923,10 @@ PrefabInstance:
       value: images-2_0 1 (10)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -6077,7 +6082,6 @@ GameObject:
   - component: {fileID: 586957082}
   - component: {fileID: 586957083}
   - component: {fileID: 586957084}
-  - component: {fileID: 586957086}
   - component: {fileID: 586957087}
   m_Layer: 0
   m_Name: Spike (7)
@@ -6202,28 +6206,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 8.808606, y: 4.121912}
   m_EdgeRadius: 0
---- !u!95 &586957086
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 586957081}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &586957087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6326,6 +6308,10 @@ PrefabInstance:
       value: images-2_0 1 (65)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -6385,6 +6371,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (126)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -6463,6 +6453,140 @@ Transform:
   - {fileID: 561144049}
   - {fileID: 1716374725}
   - {fileID: 1886190050}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &615773442
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 615773445}
+  - component: {fileID: 615773444}
+  - component: {fileID: 615773443}
+  m_Layer: 0
+  m_Name: FinishFlag
+  m_TagString: Finish
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &615773443
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615773442}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 1}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 2, y: 2}
+  m_EdgeRadius: 0
+--- !u!212 &615773444
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615773442}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -161433968, guid: ee202c53fa4154a689bfce093d4439aa, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2, y: 2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &615773445
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615773442}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 418.7, y: -13.87, z: 0}
+  m_LocalScale: {x: 1.973295, y: 2.8973238, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &619394800
@@ -6602,6 +6726,10 @@ PrefabInstance:
       value: images-2_0 1 (54)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -6666,6 +6794,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -7028,6 +7160,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (122)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -7531,6 +7667,10 @@ PrefabInstance:
       value: images-2_0 1 (102)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -7550,7 +7690,6 @@ GameObject:
   - component: {fileID: 722155935}
   - component: {fileID: 722155936}
   - component: {fileID: 722155937}
-  - component: {fileID: 722155939}
   - component: {fileID: 722155940}
   m_Layer: 0
   m_Name: Spike (13)
@@ -7675,28 +7814,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 9.261596, y: 4}
   m_EdgeRadius: 0
---- !u!95 &722155939
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 722155934}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &722155940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7761,6 +7878,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (87)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -7859,6 +7980,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -7987,6 +8112,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (78)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -8220,6 +8349,10 @@ PrefabInstance:
       value: images-2_0 1 (100)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -8279,6 +8412,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (72)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -8345,6 +8482,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -8439,6 +8580,10 @@ PrefabInstance:
       value: images-2_0 1 (127)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -8510,6 +8655,10 @@ PrefabInstance:
       value: images-2_0 1 (84)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -8571,6 +8720,10 @@ PrefabInstance:
       value: images-2_0 1 (30)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -8630,6 +8783,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (91)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -8696,6 +8853,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -9065,6 +9226,10 @@ PrefabInstance:
       value: images-2_0 1 (107)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -9129,6 +9294,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -9507,6 +9676,10 @@ PrefabInstance:
       value: images-2_0 1 (94)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -9573,6 +9746,10 @@ PrefabInstance:
       value: images-2_0 1 (123)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -9592,7 +9769,6 @@ GameObject:
   - component: {fileID: 952114060}
   - component: {fileID: 952114061}
   - component: {fileID: 952114062}
-  - component: {fileID: 952114064}
   - component: {fileID: 952114065}
   m_Layer: 0
   m_Name: Spike (6)
@@ -9717,28 +9893,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 9.103603, y: 4}
   m_EdgeRadius: 0
---- !u!95 &952114064
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 952114059}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &952114065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9815,6 +9969,10 @@ PrefabInstance:
       value: images-2_0 1 (24)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -9844,7 +10002,6 @@ GameObject:
   - component: {fileID: 965930540}
   - component: {fileID: 965930544}
   - component: {fileID: 965930543}
-  - component: {fileID: 965930542}
   - component: {fileID: 965930541}
   m_Layer: 0
   m_Name: Spike (21)
@@ -9881,28 +10038,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 10
---- !u!95 &965930542
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965930539}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!61 &965930543
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10020,7 +10155,6 @@ GameObject:
   - component: {fileID: 979208389}
   - component: {fileID: 979208393}
   - component: {fileID: 979208392}
-  - component: {fileID: 979208391}
   - component: {fileID: 979208390}
   m_Layer: 0
   m_Name: Spike (17)
@@ -10057,28 +10191,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 10
---- !u!95 &979208391
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 979208388}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!61 &979208392
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10241,6 +10353,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (66)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -22097,8 +22213,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 132.1, y: 28.1}
-  m_SizeDelta: {x: 36.5781, y: 31.3143}
+  m_AnchoredPosition: {x: -2.5553, y: 55.2968}
+  m_SizeDelta: {x: 68.229, y: 49.6682}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1043493500
 MonoBehaviour:
@@ -22122,7 +22238,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 8595018346712309538, guid: c75cbb1e742c3d648b55d31139032946, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -22191,6 +22307,10 @@ PrefabInstance:
       value: images-2_0 1 (27)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -22233,8 +22353,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 177.83853, y: 15.8492}
-  m_SizeDelta: {x: 219.7583, y: 68.3016}
+  m_AnchoredPosition: {x: 82.760506, y: 35.865627}
+  m_SizeDelta: {x: 409.9142, y: 108.3344}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1047577090
 MonoBehaviour:
@@ -22332,6 +22452,10 @@ PrefabInstance:
       value: images-2_0 1 (48)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -22351,6 +22475,10 @@ PrefabInstance:
     - target: {fileID: 6320003832771408029, guid: 676d9df3e483e9c4c9bc5318552b6803, type: 3}
       propertyPath: m_Name
       value: images-2_0 2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6320003832771408029, guid: 676d9df3e483e9c4c9bc5318552b6803, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6556110225581547516, guid: 676d9df3e483e9c4c9bc5318552b6803, type: 3}
       propertyPath: m_LocalScale.x
@@ -22681,6 +22809,10 @@ PrefabInstance:
       value: images-2_0 1 (128)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -22740,6 +22872,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (106)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -22892,6 +23028,10 @@ PrefabInstance:
       value: images-2_0 1
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -22951,6 +23091,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -23019,6 +23163,10 @@ PrefabInstance:
       value: images-2_0 1 (58)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -23080,6 +23228,10 @@ PrefabInstance:
       value: images-2_0 1 (34)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -23139,6 +23291,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (75)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -23287,6 +23443,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (103)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -23491,6 +23651,10 @@ PrefabInstance:
       value: images-2_0 1 (117)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -23644,6 +23808,10 @@ PrefabInstance:
       value: images-2_0 1 (115)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -23703,6 +23871,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (111)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -23800,6 +23972,10 @@ PrefabInstance:
       value: images-2_0 1 (13)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -23856,7 +24032,6 @@ GameObject:
   - component: {fileID: 1115592409}
   - component: {fileID: 1115592410}
   - component: {fileID: 1115592411}
-  - component: {fileID: 1115592413}
   - component: {fileID: 1115592414}
   m_Layer: 0
   m_Name: Spike
@@ -23981,28 +24156,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 8, y: 4}
   m_EdgeRadius: 0
---- !u!95 &1115592413
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1115592408}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1115592414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24069,6 +24222,10 @@ PrefabInstance:
       value: images-2_0 1 (77)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -24088,7 +24245,6 @@ GameObject:
   - component: {fileID: 1137740171}
   - component: {fileID: 1137740175}
   - component: {fileID: 1137740174}
-  - component: {fileID: 1137740173}
   - component: {fileID: 1137740172}
   m_Layer: 0
   m_Name: Spike (23)
@@ -24125,28 +24281,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 10
---- !u!95 &1137740173
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1137740170}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!61 &1137740174
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24301,6 +24435,10 @@ PrefabInstance:
       value: images-2_0 1 (90)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -24362,6 +24500,10 @@ PrefabInstance:
       value: images-2_0 1 (64)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -24421,6 +24563,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -24487,6 +24633,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (118)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -24570,6 +24720,10 @@ PrefabInstance:
       value: images-2_0 1 (62)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -24634,6 +24788,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -24736,6 +24894,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (74)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -25031,6 +25193,10 @@ PrefabInstance:
       value: images-2_0 1 (9)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -25274,6 +25440,10 @@ PrefabInstance:
       value: images-2_0 1 (53)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -25352,6 +25522,16 @@ MonoBehaviour:
   totalCoinText: {fileID: 252028529}
   diamondsCollected: 0
   diamondText: {fileID: 2076608330}
+  player: {fileID: 0}
+  collectableLayers:
+    serializedVersion: 2
+    m_Bits: 8
+  magnetRadius: 15
+  pullAcceleration: 30
+  maxPullSpeed: 12
+  magnetActive: 0
+  coinTag: coin
+  diamondTag: diamond
 --- !u!4 &1255415500 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2500388827595436416, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
@@ -25410,6 +25590,10 @@ PrefabInstance:
       value: images-2_0 1 (29)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -25452,8 +25636,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 273.1, y: 17.5}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 253.98, y: 38.167}
+  m_SizeDelta: {x: 272.84, y: 229.1401}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1274116022
 MonoBehaviour:
@@ -25477,7 +25661,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 8595018346712309538, guid: 717d4b892906edc4fb6f0a5f3ecb431f, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -25544,6 +25728,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -25692,6 +25880,10 @@ PrefabInstance:
       value: images-2_0 1 (76)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -25758,6 +25950,10 @@ PrefabInstance:
       value: images-2_0 1 (81)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -25817,6 +26013,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -26099,6 +26299,10 @@ PrefabInstance:
       value: images-2_0 1 (63)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -26118,7 +26322,6 @@ GameObject:
   - component: {fileID: 1345057979}
   - component: {fileID: 1345057983}
   - component: {fileID: 1345057982}
-  - component: {fileID: 1345057981}
   - component: {fileID: 1345057980}
   m_Layer: 0
   m_Name: Spike (18)
@@ -26155,28 +26358,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 10
---- !u!95 &1345057981
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1345057978}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!61 &1345057982
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26474,6 +26655,10 @@ PrefabInstance:
       value: images-2_0 1 (11)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -26533,6 +26718,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -26707,6 +26896,10 @@ PrefabInstance:
       value: images-2_0 1 (41)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -26808,6 +27001,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (132)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -26921,6 +27118,10 @@ PrefabInstance:
     - target: {fileID: 6320003832771408029, guid: 676d9df3e483e9c4c9bc5318552b6803, type: 3}
       propertyPath: m_Name
       value: images-2_0 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6320003832771408029, guid: 676d9df3e483e9c4c9bc5318552b6803, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6556110225581547516, guid: 676d9df3e483e9c4c9bc5318552b6803, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27105,6 +27306,10 @@ PrefabInstance:
       value: images-2_0 1 (79)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -27267,7 +27472,6 @@ GameObject:
   - component: {fileID: 1419618486}
   - component: {fileID: 1419618487}
   - component: {fileID: 1419618488}
-  - component: {fileID: 1419618490}
   - component: {fileID: 1419618491}
   m_Layer: 0
   m_Name: Spike (3)
@@ -27392,28 +27596,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 9.088941, y: 4}
   m_EdgeRadius: 0
---- !u!95 &1419618490
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1419618485}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1419618491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27478,6 +27660,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (68)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -27551,6 +27737,10 @@ PrefabInstance:
       value: images-2_0 1 (52)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -27610,6 +27800,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (130)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -27944,6 +28138,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (105)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -28489,6 +28687,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: images-2_0 2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6320003832771408029, guid: 676d9df3e483e9c4c9bc5318552b6803, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6556110225581547516, guid: 676d9df3e483e9c4c9bc5318552b6803, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.15
@@ -28638,6 +28840,10 @@ PrefabInstance:
       value: images-2_0 1 (114)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -28733,6 +28939,10 @@ PrefabInstance:
       value: images-2_0 1 (17)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -28799,6 +29009,10 @@ PrefabInstance:
       value: images-2_0 1 (28)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -28818,7 +29032,6 @@ GameObject:
   - component: {fileID: 1572551949}
   - component: {fileID: 1572551953}
   - component: {fileID: 1572551952}
-  - component: {fileID: 1572551951}
   - component: {fileID: 1572551950}
   m_Layer: 0
   m_Name: Spike (16)
@@ -28855,28 +29068,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 10
---- !u!95 &1572551951
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1572551948}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!61 &1572551952
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29036,6 +29227,10 @@ PrefabInstance:
       value: images-2_0 1 (124)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -29128,6 +29323,10 @@ PrefabInstance:
       value: images-2_0 1 (85)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -29189,6 +29388,10 @@ PrefabInstance:
       value: images-2_0 1 (108)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -29208,7 +29411,6 @@ GameObject:
   - component: {fileID: 1611853804}
   - component: {fileID: 1611853805}
   - component: {fileID: 1611853806}
-  - component: {fileID: 1611853808}
   - component: {fileID: 1611853809}
   m_Layer: 0
   m_Name: Spike (14)
@@ -29333,28 +29535,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 8, y: 4}
   m_EdgeRadius: 0
---- !u!95 &1611853808
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1611853803}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1611853809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29421,6 +29601,10 @@ PrefabInstance:
       value: images-2_0 1 (95)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -29445,7 +29629,6 @@ GameObject:
   - component: {fileID: 1619953473}
   - component: {fileID: 1619953477}
   - component: {fileID: 1619953476}
-  - component: {fileID: 1619953475}
   - component: {fileID: 1619953474}
   m_Layer: 0
   m_Name: Spike (20)
@@ -29482,28 +29665,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 10
---- !u!95 &1619953475
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1619953472}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!61 &1619953476
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29738,6 +29899,10 @@ PrefabInstance:
       value: images-2_0 1 (97)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -29797,6 +29962,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -30074,6 +30243,10 @@ PrefabInstance:
       value: images-2_0 1 (22)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -30195,6 +30368,10 @@ PrefabInstance:
       value: images-2_0 1 (113)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -30254,6 +30431,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (129)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -30317,6 +30498,10 @@ PrefabInstance:
       value: images-2_0 1 (71)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -30376,6 +30561,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (109)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -30459,6 +30648,10 @@ PrefabInstance:
       value: images-2_0 1 (31)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -30523,6 +30716,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (99)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -30657,7 +30854,6 @@ GameObject:
   - component: {fileID: 1719224942}
   - component: {fileID: 1719224946}
   - component: {fileID: 1719224945}
-  - component: {fileID: 1719224944}
   - component: {fileID: 1719224943}
   m_Layer: 0
   m_Name: Spike (19)
@@ -30694,28 +30890,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 10
---- !u!95 &1719224944
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1719224941}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!61 &1719224945
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30875,6 +31049,10 @@ PrefabInstance:
       value: images-2_0 1 (92)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -30922,8 +31100,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 133.7331, y: -1.3}
-  m_SizeDelta: {x: 111.4928, y: 21.0796}
+  m_AnchoredPosition: {x: 0.4908, y: 8.6649}
+  m_SizeDelta: {x: 207.967, y: 33.4347}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1762937427
 MonoBehaviour:
@@ -30972,8 +31150,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8
-  m_fontSizeBase: 8
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -31098,6 +31276,10 @@ PrefabInstance:
       value: images-2_0 1 (82)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -31159,6 +31341,10 @@ PrefabInstance:
       value: images-2_0 1 (21)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -31218,6 +31404,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -31636,6 +31826,10 @@ PrefabInstance:
       value: images-2_0 1 (125)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -31660,7 +31854,6 @@ GameObject:
   - component: {fileID: 1815739887}
   - component: {fileID: 1815739888}
   - component: {fileID: 1815739889}
-  - component: {fileID: 1815739891}
   - component: {fileID: 1815739892}
   m_Layer: 0
   m_Name: Spike (2)
@@ -31785,28 +31978,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 8.631261, y: 4.235196}
   m_EdgeRadius: 0
---- !u!95 &1815739891
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1815739886}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1815739892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31871,6 +32042,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -31939,6 +32114,10 @@ PrefabInstance:
       value: images-2_0 1 (133)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -31968,6 +32147,10 @@ PrefabInstance:
     - target: {fileID: 6320003832771408029, guid: 676d9df3e483e9c4c9bc5318552b6803, type: 3}
       propertyPath: m_Name
       value: images-2_0 2 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6320003832771408029, guid: 676d9df3e483e9c4c9bc5318552b6803, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6556110225581547516, guid: 676d9df3e483e9c4c9bc5318552b6803, type: 3}
       propertyPath: m_LocalScale.x
@@ -32374,6 +32557,10 @@ PrefabInstance:
       value: images-2_0 1 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -32467,6 +32654,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (121)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -32847,7 +33038,6 @@ GameObject:
   - component: {fileID: 1914064631}
   - component: {fileID: 1914064632}
   - component: {fileID: 1914064633}
-  - component: {fileID: 1914064635}
   - component: {fileID: 1914064636}
   m_Layer: 0
   m_Name: Spike (9)
@@ -32972,28 +33162,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 8.825894, y: 4}
   m_EdgeRadius: 0
---- !u!95 &1914064635
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1914064630}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1914064636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33065,6 +33233,10 @@ PrefabInstance:
       value: images-2_0 1 (96)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -33124,6 +33296,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -33187,6 +33363,10 @@ PrefabInstance:
       value: images-2_0 1 (86)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -33246,6 +33426,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -33309,6 +33493,10 @@ PrefabInstance:
       value: images-2_0 1 (12)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -33370,6 +33558,10 @@ PrefabInstance:
       value: images-2_0 1 (70)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -33429,6 +33621,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (83)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -33721,6 +33917,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: images-2_0 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33742,6 +33942,10 @@ PrefabInstance:
     - target: {fileID: 6320003832771408029, guid: 676d9df3e483e9c4c9bc5318552b6803, type: 3}
       propertyPath: m_Name
       value: images-2_0 2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6320003832771408029, guid: 676d9df3e483e9c4c9bc5318552b6803, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6556110225581547516, guid: 676d9df3e483e9c4c9bc5318552b6803, type: 3}
       propertyPath: m_LocalScale.x
@@ -33948,7 +34152,6 @@ GameObject:
   - component: {fileID: 2000262175}
   - component: {fileID: 2000262176}
   - component: {fileID: 2000262177}
-  - component: {fileID: 2000262179}
   - component: {fileID: 2000262180}
   m_Layer: 0
   m_Name: Spike (11)
@@ -34073,28 +34276,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 8.956113, y: 4}
   m_EdgeRadius: 0
---- !u!95 &2000262179
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2000262174}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &2000262180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34161,6 +34342,10 @@ PrefabInstance:
       value: images-2_0 1 (6)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -34220,6 +34405,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -34413,7 +34602,6 @@ GameObject:
   - component: {fileID: 2028049308}
   - component: {fileID: 2028049309}
   - component: {fileID: 2028049310}
-  - component: {fileID: 2028049312}
   - component: {fileID: 2028049313}
   m_Layer: 0
   m_Name: Spike (5)
@@ -34538,28 +34726,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 8.544608, y: 4}
   m_EdgeRadius: 0
---- !u!95 &2028049312
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2028049307}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &2028049313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34665,6 +34831,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (73)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -34911,6 +35081,10 @@ PrefabInstance:
       value: images-2_0 1 (39)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -34970,6 +35144,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (89)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -35139,7 +35317,6 @@ GameObject:
   - component: {fileID: 2101529633}
   - component: {fileID: 2101529634}
   - component: {fileID: 2101529635}
-  - component: {fileID: 2101529637}
   - component: {fileID: 2101529638}
   m_Layer: 0
   m_Name: Spike (12)
@@ -35264,28 +35441,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 8.841106, y: 4}
   m_EdgeRadius: 0
---- !u!95 &2101529637
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2101529632}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &2101529638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35352,6 +35507,10 @@ PrefabInstance:
       value: images-2_0 1 (120)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -35411,6 +35570,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -35482,6 +35645,10 @@ PrefabInstance:
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_Name
       value: images-2_0 1 (104)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
@@ -35629,6 +35796,10 @@ PrefabInstance:
       value: images-2_0 1 (36)
       objectReference: {fileID: 0}
     - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068076554036426463, guid: 2b67b1f4bc1bd974d950b081c53345f2, type: 3}
       propertyPath: m_TagString
       value: coin
       objectReference: {fileID: 0}
@@ -35681,8 +35852,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 237.9, y: 17.3}
-  m_SizeDelta: {x: 41.5177, y: 18.4071}
+  m_AnchoredPosition: {x: 194.7929, y: 38.1667}
+  m_SizeDelta: {x: 77.4428, y: 29.1958}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2135232215
 MonoBehaviour:
@@ -35731,8 +35902,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12
-  m_fontSizeBase: 12
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -35831,14 +36002,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6815129731955685809, guid: 3cac9659d14034d519dc2c43b7b3778e, type: 3}
-      propertyPath: s_coin
-      value: 
-      objectReference: {fileID: 8595018346712309538, guid: 09b03912d74c9ee46aaef7006378d20b, type: 3}
-    - target: {fileID: 6815129731955685809, guid: 3cac9659d14034d519dc2c43b7b3778e, type: 3}
-      propertyPath: s_diamond
-      value: 
-      objectReference: {fileID: 8595018346712309538, guid: 672119e97fbc94141ba8ee5b141e332b, type: 3}
     - target: {fileID: 8127550539271884005, guid: 3cac9659d14034d519dc2c43b7b3778e, type: 3}
       propertyPath: m_Name
       value: GameAssets
@@ -36075,3 +36238,4 @@ SceneRoots:
   - {fileID: 3804373915968465795}
   - {fileID: 1100491770}
   - {fileID: 233250951}
+  - {fileID: 615773445}
