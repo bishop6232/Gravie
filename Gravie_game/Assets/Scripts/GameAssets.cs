@@ -11,9 +11,12 @@ public class GameAssets : MonoBehaviour
     public Sprite s_quarterHealthPotion;
     public Sprite s_magnet;
     public Sprite s_speedRun;
+    public Sprite s_HealthNone;
 
-    public static GameAssets i {
-        get {
+    public static GameAssets instance
+    {
+        get
+        {
             if (_i == null) _i = Instantiate(Resources.Load<GameAssets>("GameAssets"));
             return _i;
         }

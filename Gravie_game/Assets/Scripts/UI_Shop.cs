@@ -12,6 +12,7 @@ public class UI_Shop : MonoBehaviour
         container = transform.Find("container");
         shopItemTemplate = container.Find("shopItemTemplate");
         shopItemTemplate.gameObject.SetActive(false);
+
     }
 
     private void Start() {
@@ -25,11 +26,12 @@ public class UI_Shop : MonoBehaviour
     private void createItemButton(Sprite itemSprite, string itemName, int itemCost, int positionIndex) {
         Transform shopItemTransform = Instantiate(shopItemTemplate, container);
         RectTransform shopItemRectTransform = shopItemTransform.GetComponent<RectTransform>();
-        float shopItemHeight = 30f;
+
+        float shopItemHeight = 120f;
         shopItemRectTransform.anchoredPosition = new Vector2(0, -shopItemHeight * positionIndex);
 
         shopItemTransform.Find("itemImage").GetComponent<Image>().sprite = itemSprite;
-        shopItemTransform.Find("itemName").GetComponent<TextMeshPro>().SetText(itemName);
-        shopItemTransform.Find("itemCost").GetComponent<TextMeshPro>().SetText(itemCost.ToString());
+        shopItemTransform.Find("itemName").GetComponent<TextMeshProUGUI>().SetText(itemName);
+        shopItemTransform.Find("itemCost").GetComponent<TextMeshProUGUI>().SetText(itemCost.ToString());
     }
 }
