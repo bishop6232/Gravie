@@ -24,7 +24,7 @@ public class CharacterManager : MonoBehaviour
         UpdatePreview();
     }
 
-    public void BackOption()
+    public void PreviousOption()
     {
         if (characters.Count == 0) return;
         selectedIndex = (selectedIndex - 1 + characters.Count) % characters.Count;
@@ -38,10 +38,14 @@ public class CharacterManager : MonoBehaviour
     }
 
     public void PlayGame()
-{
-    Debug.Log("[CharacterManager] Saving index = " + selectedIndex);
-    PlayerPrefs.SetInt("SelectedCharacterIndex", selectedIndex);
-    PlayerPrefs.Save();
-    UnityEngine.SceneManagement.SceneManager.LoadScene("GamePlayScene");
-}
+    {
+        Debug.Log("[CharacterManager] Saving index = " + selectedIndex);
+        PlayerPrefs.SetInt("SelectedCharacterIndex", selectedIndex);
+        PlayerPrefs.Save();
+        UnityEngine.SceneManagement.SceneManager.LoadScene("GamePlayScene");
+    }
+    public void BackButton()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
 }
