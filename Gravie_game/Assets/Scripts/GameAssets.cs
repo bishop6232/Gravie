@@ -12,6 +12,7 @@ public class GameAssets : MonoBehaviour
     public Sprite s_magnet;
     public Sprite s_speedRun;
     public Sprite s_HealthNone;
+    public Sprite[] currencyImages;
 
     public static GameAssets instance
     {

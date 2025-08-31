@@ -38,6 +38,7 @@ public class UI_Shop : MonoBehaviour
         shopItemTransform.Find("itemImage").GetComponent<Image>().sprite = itemSprite;
         shopItemTransform.Find("itemName").GetComponent<TextMeshProUGUI>().SetText(itemName);
         shopItemTransform.Find("itemCost").GetComponent<TextMeshProUGUI>().SetText(itemCost.ToString());
+        
 
         shopItemRectTransform.GetComponent<Button>().onClick.AddListener(() => {
             TryBuyItem(itemType);
@@ -46,7 +47,14 @@ public class UI_Shop : MonoBehaviour
     }
 
     private void TryBuyItem(Item.ItemType itemType) {
-        shopCustomer.BoughtItem(itemType);
+        if (shopCustomer.TrySpendCoins(Item.GetCost(itemType)))
+        {
+            shopCustomer.BoughtItem(itemType);
+        }
+        else if (shopCustomer.TrySpendSpecial(Item.GetSpecialCost(itemType)))
+        {
+            shopCustomer.BoughtItem(itemType);
+        }
     }
 
     public void Show(IShopCustomer shopCustomer)

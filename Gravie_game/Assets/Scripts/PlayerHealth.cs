@@ -44,7 +44,6 @@ public class PlayerHealth : MonoBehaviour
         }
             
     }
-    /*
     public void Heal(int amount)
     {
         if (currentHealth <= 0)
@@ -58,7 +57,7 @@ public class PlayerHealth : MonoBehaviour
             currentHealth = newHealth;
             OnHealthChanged.Invoke(currentHealth, maxHealth);
         }
-    } */
+    }
 
     private void Die()
     {

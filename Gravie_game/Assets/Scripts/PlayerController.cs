@@ -7,9 +7,13 @@ using System.Collections.Generic;
 public class PlayerController : MonoBehaviour, IShopCustomer
 {
     AudioManager audioManager;
-    public CollectableManager collectableManager;
+    public CollectableManager collectableManager; 
     Vector2 moveInput;
     Rigidbody2D rb;
+
+    public int coinsCollected { get; private set; }
+    public int diamondsCollected { get; private set; }
+
     TouchingDirections touchingDirections;
 
     Animator animator;
@@ -205,5 +209,46 @@ public class PlayerController : MonoBehaviour, IShopCustomer
     public void BoughtItem(Item.ItemType itemType)
     {
         Debug.Log("Player bought item: " + itemType);
+        switch (itemType)
+        {
+            case Item.ItemType.fullHealthPotion:
+                // Heal to full health
+                GetComponent<PlayerHealth>().Heal(100); // assuming 100 is full health
+                break;
+            case Item.ItemType.halfHealthPotion:
+                // Heal to half health
+                GetComponent<PlayerHealth>().Heal(50); // assuming 50 is half health
+                break;
+            case Item.ItemType.quarterHealthPotion:
+                // Heal to quarter health
+                GetComponent<PlayerHealth>().Heal(25); // assuming 25 is quarter health
+                break;
     }
 }
+
+    public bool TrySpendCoins(int spendCoinsCollected)
+    {
+        if (collectableManager.coinsCollected >= spendCoinsCollected)
+        {
+            collectableManager.coinsCollected -= spendCoinsCollected;
+            return true;
+        }
+        Debug.Log("Not enough coins");
+        return false;
+    }
+
+    public bool TrySpendSpecial(int spendSpecialCollected)
+    {
+        if (collectableManager.diamondsCollected >= spendSpecialCollected)
+        {
+            collectableManager.diamondsCollected -= spendSpecialCollected;
+            return true;
+        } else {
+            Debug.Log("Not enough diamonds");
+            return false;
+        }
+
+    }
+
+    }
+
