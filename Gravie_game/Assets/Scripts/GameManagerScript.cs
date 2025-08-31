@@ -24,6 +24,8 @@ public class GameManagerScript : MonoBehaviour
 
     private void Awake()
     {
+        InputSystem.EnableDevice(Keyboard.current);
+        InputSystem.EnableDevice(Gamepad.current);
         audioManager = GameObject.FindGameObjectWithTag("Audio")?.GetComponent<AudioManager>();
 
         // Apply chosen controller BEFORE animations tick
@@ -93,10 +95,10 @@ public class GameManagerScript : MonoBehaviour
     public void LoadMainMenu()
     {
         audioManager.StopBackgroundMusic();
-        // Load the main menu scene
-        SceneManager.LoadScene("Main Menu");
         InputSystem.EnableDevice(Keyboard.current);
         InputSystem.EnableDevice(Gamepad.current);
+        // Load the main menu scene
+        SceneManager.LoadScene("Main Menu");
         Debug.Log("Loading Main Menu");
         audioManager.ResumeBackgroundMusic();
 
