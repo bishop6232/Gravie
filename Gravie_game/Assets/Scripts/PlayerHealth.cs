@@ -41,15 +41,15 @@ public class PlayerHealth : MonoBehaviour
             isDead = true; // Prevent multiple calls to Die
             Die();
             gameManager.GameOver(); // Call GameOver method from GameManagerScript
-        }
-            
+        }     
     }
+
     public void Heal(int amount)
     {
         if (currentHealth <= 0)
         {
-            return; 
-        } 
+            return;
+        }
 
         int newHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         if (newHealth != currentHealth)

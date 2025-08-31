@@ -57,14 +57,19 @@ public class UI_Shop : MonoBehaviour
     }
 
     private void TryBuyItem(Item.ItemType itemType) {
-        if (shopCustomer.TrySpendCoins(Item.GetCost(itemType)))
-        {
+        int coinCost = Item.GetCost(itemType);
+        int diamondCost = Item.GetSpecialCost(itemType);
+
+    if (coinCost > 0) {
+        if (shopCustomer.TrySpendCoins(coinCost)) {
             shopCustomer.BoughtItem(itemType);
         }
-        else if (shopCustomer.TrySpendSpecial(Item.GetSpecialCost(itemType)))
-        {
+    } 
+    else if (diamondCost > 0) {
+        if (shopCustomer.TrySpendSpecial(diamondCost)) {
             shopCustomer.BoughtItem(itemType);
         }
+    }
     }
 
     public void Show(IShopCustomer shopCustomer)

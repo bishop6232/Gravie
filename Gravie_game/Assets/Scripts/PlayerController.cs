@@ -6,10 +6,12 @@ using System.Collections.Generic;
 [RequireComponent(typeof(Rigidbody2D), typeof(TouchingDirections))]
 public class PlayerController : MonoBehaviour, IShopCustomer
 {
+    UI_Shop shopUI;
     AudioManager audioManager;
     public CollectableManager collectableManager; 
     Vector2 moveInput;
     Rigidbody2D rb;
+    public GameManagerScript gameManager;
 
     public int coinsCollected { get; private set; }
     public int diamondsCollected { get; private set; }
@@ -100,6 +102,8 @@ public class PlayerController : MonoBehaviour, IShopCustomer
         animator = GetComponent<Animator>();
         touchingDirections = GetComponent<TouchingDirections>();
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        shopUI = FindAnyObjectByType<UI_Shop>();
+        gameManager = FindAnyObjectByType<GameManagerScript>();
     }
 
     private void FixedUpdate()
@@ -138,6 +142,34 @@ public class PlayerController : MonoBehaviour, IShopCustomer
             IsRunning = false;
 
         }
+    }
+    public void ActivateSpeedBoost(float duration, float speedMultiplier)
+    {
+        StartCoroutine(SpeedBoostCoroutine(duration, speedMultiplier));
+    }
+    private IEnumerator SpeedBoostCoroutine(float duration, float speedMultiplier)
+    {
+        float originalWalkSpeed = walkspeed;
+        float originalRunSpeed = runspeed;
+
+        walkspeed += speedMultiplier;
+        runspeed += speedMultiplier;
+
+        yield return new WaitForSeconds(duration);
+
+        walkspeed = originalWalkSpeed;
+        runspeed = originalRunSpeed;
+    }
+
+    public void ActivateMagnet(float duration)
+    {
+        StartCoroutine(MagnetCoroutine(duration));
+    }
+    private IEnumerator MagnetCoroutine(float duration)
+    {
+        collectableManager.ActivateMagnet();
+        yield return new WaitForSeconds(duration);
+        collectableManager.DeactivateMagnet();
     }
 
     // TODO: check if player is still alive before jump
@@ -194,7 +226,7 @@ public class PlayerController : MonoBehaviour, IShopCustomer
             Destroy(other.gameObject);
             collectableManager.coinsCollected++;
 
-            Debug.Log("Coin picked up!"); 
+            Debug.Log("Coin picked up!");
         }
         if (other.CompareTag("diamond"))
         {
@@ -203,6 +235,11 @@ public class PlayerController : MonoBehaviour, IShopCustomer
             collectableManager.diamondsCollected++;
 
             Debug.Log("Diamond picked up!");
+        }
+        if (other.CompareTag("Finish"))
+        {
+            Debug.Log("Level Complete!");
+            gameManager.GameWon();
         }
     }
 
@@ -223,6 +260,22 @@ public class PlayerController : MonoBehaviour, IShopCustomer
                 // Heal to quarter health
                 GetComponent<PlayerHealth>().Heal(25); // assuming 25 is quarter health
                 break;
+            case Item.ItemType.magnet:
+            // Activate magnet effect
+            ActivateMagnet(60f);
+                if (shopUI != null)
+                {
+                    shopUI.Hide();
+                }   
+                break;
+            case Item.ItemType.speedRun:
+                // Activate speed boost
+                ActivateSpeedBoost(60f, 9f);
+                 if(shopUI != null) {
+                    shopUI.Hide();
+                 }
+                break;
+                
         }
     }
 
@@ -233,6 +286,7 @@ public class PlayerController : MonoBehaviour, IShopCustomer
             collectableManager.coinsCollected -= spendCoinsCollected;
             return true;
         }
+
         Debug.Log("Not enough coins");
         return false;
     }
@@ -243,10 +297,10 @@ public class PlayerController : MonoBehaviour, IShopCustomer
         {
             collectableManager.diamondsCollected -= spendSpecialCollected;
             return true;
-        } else {
-            Debug.Log("Not enough diamonds");
-            return false;
         }
+        Debug.Log("Not enough diamonds");
+        return false;
+      
 
     }
 
