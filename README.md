@@ -40,9 +40,8 @@ All controls are handled via **on-screen buttons**:
 - **Avoid traps** — each hit costs health.
 - Use **gravity flips** to bypass unreachable paths or avoid obstacles.
 - Spend coins on **health potions** and **power-ups** like:
-  - **Void Phase**: absorbs one hit
-  - **Magnet Pulse**: pulls coins to you for 10 seconds
-- Plan your item usage — you can only carry **2 items** at a time.
+  - **Speed Run**: Increase your running speed for 60 seconds
+  - **Magnet Pulse**: Pulls coins and diamonds to you for 60 seconds
 
 ---
 
@@ -50,10 +49,12 @@ All controls are handled via **on-screen buttons**:
 
 - Start with **100 health points**
 - Spike Obstacle hit: **-10 health**
-- Blade Obstacle hit: **-30 health**
+- Blade Obstacle hit: **-25 health**
+- Fire Obstacle hit: **-35 health**
 - Shop Items:
-  - Small Potion: **+20 HP**
-  - Large Potion: **+50 HP**
+  - Quarter Health Potion: **+25 HP**
+  - Half Health Potion: **+50 HP**
+  - Full Health Potion: **+100 HP**
 
 ---
 
