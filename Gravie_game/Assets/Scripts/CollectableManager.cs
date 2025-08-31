@@ -37,7 +37,10 @@ public class CollectableManager : MonoBehaviour
         if (player == null)
         {
             GameObject p = GameObject.FindGameObjectWithTag("Player");
-            if (p != null) player = p.transform;
+            if (p != null)
+            {
+                player = p.transform;
+            }
             else Debug.LogWarning("CollectableManager: No GameObject with tag 'Player' found. Magnet will be inactive.");
         }
 
@@ -55,16 +58,34 @@ public class CollectableManager : MonoBehaviour
         coinsCollected = 0;
         diamondsCollected = 0;
 
-        if (coinText != null)      coinText.text = coinsCollected.ToString();
-        if (totalCoinText != null) totalCoinText.text = "Total Coins: " + coinsCollected;
-        if (diamondText != null)   diamondText.text = diamondsCollected.ToString();
+        if (coinText != null)
+        {
+            coinText.text = coinsCollected.ToString();
+        }
+        if (totalCoinText != null)
+        {
+            totalCoinText.text = "Total Coins: " + coinsCollected;
+        }
+        if (diamondText != null)
+        {
+            diamondText.text = diamondsCollected.ToString();
+        }
     }
 
     private void Update()
     {
-        if (coinText != null)      coinText.text = coinsCollected.ToString();
-        if (diamondText != null)   diamondText.text = diamondsCollected.ToString();
-        if (totalCoinText != null) totalCoinText.text = "Total Coins: " + coinsCollected;
+        if (coinText != null)
+        {
+            coinText.text = coinsCollected.ToString();
+        }
+        if (diamondText != null)
+        {
+            diamondText.text = diamondsCollected.ToString();
+        }
+        if (totalCoinText != null)
+        {
+            totalCoinText.text = "Total Coins: " + coinsCollected;
+        }
 
         if (magnetActive && player != null && collectableLayers != 0)
         {
@@ -98,17 +119,29 @@ public class CollectableManager : MonoBehaviour
         for (int i = 0; i < count; i++)
         {
             Collider2D col = _overlaps[i];
-            if (col == null) continue;
+            if (col == null)
+            {
+                continue;
+            }
 
             // Ignore the player and their children
-            if (col.transform == player || col.transform.IsChildOf(player)) continue;
+            if (col.transform == player || col.transform.IsChildOf(player))
+            {
+                continue;
+            }
 
             // Only coins or diamonds
-            if (!col.CompareTag(coinTag) && !col.CompareTag(diamondTag)) continue;
+            if (!col.CompareTag(coinTag) && !col.CompareTag(diamondTag))
+            {
+                continue;
+            }
 
             Transform t = col.transform;
             Vector2 toPlayer = (Vector2)player.position - (Vector2)t.position;
-            if (toPlayer.sqrMagnitude < 1e-6f) continue;
+            if (toPlayer.sqrMagnitude < 1e-6f)
+            {
+                continue;
+            }
 
             Vector2 dir = toPlayer.normalized;
 
@@ -152,7 +185,10 @@ public class CollectableManager : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        if (player == null) return;
+        if (player == null)
+        {
+            return;
+        }
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(player.position, magnetRadius);
     }

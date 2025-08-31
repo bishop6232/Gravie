@@ -33,9 +33,9 @@ public static int GetSpecialCost(ItemType itemType) {
     switch (itemType) {
         default:
         case ItemType.magnet:
-            return 1;
+            return 3;
         case ItemType.speedRun:
-            return 1;
+            return 2;
     }
 }
 
