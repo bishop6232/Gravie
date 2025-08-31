@@ -9,6 +9,7 @@ public class Item
         quarterHealthPotion,
         magnet,
         speedRun
+        
     }
 
 public static int GetCost(ItemType itemType) {

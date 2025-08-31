@@ -32,7 +32,7 @@ public class UI_Shop : MonoBehaviour
         Transform shopItemTransform = Instantiate(shopItemTemplate, container);
         RectTransform shopItemRectTransform = shopItemTransform.GetComponent<RectTransform>();
 
-        float shopItemHeight = 75f;
+        float shopItemHeight = 120f;
         shopItemRectTransform.anchoredPosition = new Vector2(0, -shopItemHeight * positionIndex);
 
         shopItemTransform.Find("itemImage").GetComponent<Image>().sprite = itemSprite;
