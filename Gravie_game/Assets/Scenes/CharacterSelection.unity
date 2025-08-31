@@ -552,9 +552,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterSpriteRenderer: {fileID: 1632858105}
   characters:
-  - {fileID: -1642595428, guid: 83cef4e23ed9daa4180417efafab8bf4, type: 3}
   - {fileID: 1955731715, guid: dea4dddf447c7f341a3e9e31ba0ead59, type: 3}
-  playerCharacter: {fileID: 815750276}
+  - {fileID: -1642595428, guid: 9d1d393322fa1c444be0af3e627cc15f, type: 3}
 --- !u!4 &570426465
 Transform:
   m_ObjectHideFlags: 0
@@ -706,11 +705,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 729339114}
   m_CullTransparentMesh: 1
---- !u!1 &815750276 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7856464677679160772, guid: a48a5260ced08b14fbd1b96eaee40b35, type: 3}
-  m_PrefabInstance: {fileID: 1976316325290332988}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1377476150
 GameObject:
   m_ObjectHideFlags: 0
@@ -1307,6 +1301,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7749959514650478038, guid: a48a5260ced08b14fbd1b96eaee40b35, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7749959514650478038, guid: a48a5260ced08b14fbd1b96eaee40b35, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7749959514650478038, guid: a48a5260ced08b14fbd1b96eaee40b35, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7749959514650478038, guid: a48a5260ced08b14fbd1b96eaee40b35, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
     - target: {fileID: 7856464677679160772, guid: a48a5260ced08b14fbd1b96eaee40b35, type: 3}
       propertyPath: m_Name
       value: selectedPlayer
@@ -1317,9 +1327,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7856464677679160772, guid: a48a5260ced08b14fbd1b96eaee40b35, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: Untagged
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2105976097378492656, guid: a48a5260ced08b14fbd1b96eaee40b35, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

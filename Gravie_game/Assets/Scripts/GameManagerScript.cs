@@ -14,28 +14,26 @@ public class GameManagerScript : MonoBehaviour
 
     public GameObject pauseMenuUI;
 
-    public GameObject selectedPlayer;
 
-    public GameObject Player;
+    [Header("Player Setup")]
+    [SerializeField] private Animator playerAnimator;                         // assign the Player’s Animator
+    [SerializeField] private List<RuntimeAnimatorController> characterControllers; // [0]=Player1 controller, [1]=Player2 AOC, etc.
 
-    private Sprite playerSprite;
-
-    AudioManager audioManager;
-
-    void Start()
-    {
-        if (selectedPlayer != null)
-        {
-            playerSprite = selectedPlayer.GetComponent<SpriteRenderer>().sprite;
-
-           Player.GetComponent<SpriteRenderer>().sprite = playerSprite;
-        }
-    }
+    private const string PrefKey = "SelectedCharacterIndex";
+    private AudioManager audioManager;
 
     private void Awake()
     {
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio")?.GetComponent<AudioManager>();
+
+        // Apply chosen controller BEFORE animations tick
+        if (playerAnimator != null && characterControllers != null && characterControllers.Count > 0)
+        {
+            int idx = Mathf.Clamp(PlayerPrefs.GetInt(PrefKey, 0), 0, characterControllers.Count - 1);
+            playerAnimator.runtimeAnimatorController = characterControllers[idx];
+        }
     }
+    
     public void EndGame(bool won)
     {
         if (winOrLoseText != null)
@@ -50,9 +48,12 @@ public class GameManagerScript : MonoBehaviour
             InputSystem.DisableDevice(Keyboard.current);
             InputSystem.DisableDevice(Gamepad.current);
         }
-        else InputSystem.EnableDevice(Keyboard.current);
+        else
+            {
+            InputSystem.EnableDevice(Keyboard.current);
             InputSystem.EnableDevice(Gamepad.current);
-            
+        }
+
         if (audioManager != null)
         {
             audioManager.StopSound();
