@@ -51,15 +51,12 @@ public class DamageOnTouch : MonoBehaviour
 
         }
     }
-   public void EnableDamage()
-{
-    fireCollider.enabled = true;
-    Debug.Log("🔥 FireTrap ENABLED collider");
-}
+   public void EnableDamage(){
+        fireCollider.enabled = true;
+    }
 
-public void DisableDamage()
-{
-    fireCollider.enabled = false;
-    Debug.Log("❄️ FireTrap DISABLED collider");
-}
+    public void DisableDamage()
+    {
+        fireCollider.enabled = false;
+    }
 }
