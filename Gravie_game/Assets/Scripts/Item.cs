@@ -2,14 +2,16 @@ using UnityEngine;
 
 public class Item
 {
-    public enum ItemType {
+    public enum ItemType
+    {
         HealthNone,
         fullHealthPotion,
         halfHealthPotion,
         quarterHealthPotion,
         magnet,
-        speedRun
-        
+        speedRun,
+        coin,
+        diamond
     }
 
 public static int GetCost(ItemType itemType) {
@@ -31,27 +33,32 @@ public static int GetSpecialCost(ItemType itemType) {
     switch (itemType) {
         default:
         case ItemType.magnet:
-            return 200;
+            return 5;
         case ItemType.speedRun:
-            return 150;
+            return 3;
     }
 }
 
 public static Sprite GetSprite(ItemType itemType) {
-    switch (itemType) {
-        default:
-        case ItemType.HealthNone:
-            return GameAssets.instance.s_HealthNone;
-        case ItemType.fullHealthPotion:
-            return GameAssets.instance.s_fullHealthPotion;
-        case ItemType.halfHealthPotion:
-            return GameAssets.instance.s_halfHealthPotion;
-        case ItemType.quarterHealthPotion:
-            return GameAssets.instance.s_quarterHealthPotion;
-        case ItemType.magnet:
-            return GameAssets.instance.s_magnet;
-        case ItemType.speedRun:
-            return GameAssets.instance.s_speedRun;
+        switch (itemType)
+        {
+            default:
+            case ItemType.HealthNone:
+                return GameAssets.instance.s_HealthNone;
+            case ItemType.fullHealthPotion:
+                return GameAssets.instance.s_fullHealthPotion;
+            case ItemType.halfHealthPotion:
+                return GameAssets.instance.s_halfHealthPotion;
+            case ItemType.quarterHealthPotion:
+                return GameAssets.instance.s_quarterHealthPotion;
+            case ItemType.magnet:
+                return GameAssets.instance.s_magnet;
+            case ItemType.speedRun:
+                return GameAssets.instance.s_speedRun;
+            case ItemType.coin:
+                return GameAssets.instance.s_coin;
+            case ItemType.diamond:
+                return GameAssets.instance.s_diamond;
         }
     }
 }

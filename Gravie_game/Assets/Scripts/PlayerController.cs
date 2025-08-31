@@ -223,8 +223,8 @@ public class PlayerController : MonoBehaviour, IShopCustomer
                 // Heal to quarter health
                 GetComponent<PlayerHealth>().Heal(25); // assuming 25 is quarter health
                 break;
+        }
     }
-}
 
     public bool TrySpendCoins(int spendCoinsCollected)
     {
@@ -250,5 +250,5 @@ public class PlayerController : MonoBehaviour, IShopCustomer
 
     }
 
-    }
+}
 

@@ -49,3 +49,6 @@ MonoBehaviour:
   s_quarterHealthPotion: {fileID: 8595018346712309538, guid: 8608c51e78f7b45478db02a65743e7a3, type: 3}
   s_magnet: {fileID: 8595018346712309538, guid: 2ca3e450da1fdb24b973fa9abeceb686, type: 3}
   s_speedRun: {fileID: 8595018346712309538, guid: c20e2cdce560f6f46b5d38ac3004cf28, type: 3}
+  s_HealthNone: {fileID: 0}
+  s_coin: {fileID: 8595018346712309538, guid: 09b03912d74c9ee46aaef7006378d20b, type: 3}
+  s_diamond: {fileID: 8595018346712309538, guid: 672119e97fbc94141ba8ee5b141e332b, type: 3}
